@@ -1,0 +1,278 @@
+!SESSION 2022-05-16 21:18:34.597 -----------------------------------------------
+eclipse.buildId=2021.2.12.2
+java.version=11.0.9
+java.vendor=BellSoft
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ru_RU
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.company1c.link.ide.edt 1 0 2022-05-16 21:19:39.897
+!MESSAGE iLOG: 1C:Link addon is initializing. Web config state is in D:\1С\EDT\Practice05\.metadata\.plugins\com.company1c.link.ide.edt
+
+!ENTRY org.eclipse.ui 2 0 2022-05-16 21:19:40.264
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-05-16 21:19:40.264
+!MESSAGE Cannot bind to an undefined command: plug-in='com.genuitec.eclipse.theming.ui', id='com.genuitec.myeclipse.help.darktheme.commandid'
+
+!ENTRY com._1c.g5.v8.dt.core 1 0 2022-05-16 21:19:41.254
+!MESSAGE java.vm.name=OpenJDK 64-Bit Client VM
+
+!ENTRY com._1c.g5.v8.dt.core 1 0 2022-05-16 21:19:41.254
+!MESSAGE java.vm.info=mixed mode
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 1 0 2022-05-16 21:19:44.150
+!MESSAGE Trying to re-establish all non-closed SSH connecton...
+
+!ENTRY org.eclipse.egit.ui 4 0 2022-05-16 21:19:50.899
+!MESSAGE Cannot register git support for Java templates
+!STACK 0
+java.lang.NoClassDefFoundError: org/eclipse/jdt/internal/ui/JavaPlugin
+	at org.eclipse.egit.ui.Activator$1.runInUIThread(Activator.java:371)
+	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:95)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4001)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3629)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
+Caused by: java.lang.ClassNotFoundException: org.eclipse.jdt.internal.ui.JavaPlugin cannot be found by org.eclipse.egit.ui_5.10.0.202012080955-r
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:519)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	... 27 more
+
+!ENTRY org.eclipse.ui.navigator.resources 4 0 2022-05-16 21:19:51.289
+!MESSAGE Required filter org.eclipse.ui.navigator.resources.filters.workingSet is not present. Working set support will not function correctly.
+
+!ENTRY org.eclipse.ui.navigator.resources 4 0 2022-05-16 21:19:51.289
+!MESSAGE 
+
+!ENTRY com._1c.g5.v8.dt.platform.services.ui 4 0 2022-05-16 21:22:22.518
+!MESSAGE Произошла внутренняя ошибка
+!STACK 0
+java.lang.reflect.InvocationTargetException
+	at com._1c.g5.v8.dt.internal.platform.services.ui.infobases.wizard.InfobaseWizard.createSection(InfobaseWizard.java:467)
+	at com._1c.g5.v8.dt.internal.platform.services.ui.infobases.wizard.InfobaseWizard.lambda$3(InfobaseWizard.java:156)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: com._1c.g5.v8.dt.platform.services.core.runtimes.execution.RuntimeExecutionException: Ошибка взаимодействия с платформой 1С:Предприятия 8.3.20.1613:
+Журнал процесса платформы [код ошибки 1]:
+Создание информационной базы ("File="C:\Users\klyaksa\Documents\InfoBaseEDT";Locale="ru_RU";DBMS="MSSQLServer";") успешно завершено
+Информационная база с указанным именем или параметрами соединения уже зарегистрирована
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.AbstractRuntimeComponentExecutor.executeRuntimeProcessCommand(AbstractRuntimeComponentExecutor.java:348)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.AbstractRuntimeComponentExecutor.executeRuntimeProcessCommand(AbstractRuntimeComponentExecutor.java:97)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.ThickClientLauncher.createInfobase(ThickClientLauncher.java:90)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.DesignerSessionThickClientLauncher.lambda$1(DesignerSessionThickClientLauncher.java:211)
+	at com._1c.g5.v8.dt.internal.platform.services.core.runtimes.execution.DesignerSessionOperationSupport.execOutOfDesignerSession(DesignerSessionOperationSupport.java:302)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.DesignerSessionThickClientLauncher.execOutOfDesignerSession(DesignerSessionThickClientLauncher.java:863)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.DesignerSessionThickClientLauncher.createInfobase(DesignerSessionThickClientLauncher.java:210)
+	at com._1c.g5.v8.dt.internal.platform.services.ui.infobases.wizard.InfobaseWizard.createSection(InfobaseWizard.java:435)
+	... 2 more
+Root exception:
+com._1c.g5.v8.dt.platform.services.core.runtimes.execution.RuntimeExecutionException: Ошибка взаимодействия с платформой 1С:Предприятия 8.3.20.1613:
+Журнал процесса платформы [код ошибки 1]:
+Создание информационной базы ("File="C:\Users\klyaksa\Documents\InfoBaseEDT";Locale="ru_RU";DBMS="MSSQLServer";") успешно завершено
+Информационная база с указанным именем или параметрами соединения уже зарегистрирована
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.AbstractRuntimeComponentExecutor.executeRuntimeProcessCommand(AbstractRuntimeComponentExecutor.java:348)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.AbstractRuntimeComponentExecutor.executeRuntimeProcessCommand(AbstractRuntimeComponentExecutor.java:97)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.ThickClientLauncher.createInfobase(ThickClientLauncher.java:90)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.DesignerSessionThickClientLauncher.lambda$1(DesignerSessionThickClientLauncher.java:211)
+	at com._1c.g5.v8.dt.internal.platform.services.core.runtimes.execution.DesignerSessionOperationSupport.execOutOfDesignerSession(DesignerSessionOperationSupport.java:302)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.DesignerSessionThickClientLauncher.execOutOfDesignerSession(DesignerSessionThickClientLauncher.java:863)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.DesignerSessionThickClientLauncher.createInfobase(DesignerSessionThickClientLauncher.java:210)
+	at com._1c.g5.v8.dt.internal.platform.services.ui.infobases.wizard.InfobaseWizard.createSection(InfobaseWizard.java:435)
+	at com._1c.g5.v8.dt.internal.platform.services.ui.infobases.wizard.InfobaseWizard.lambda$3(InfobaseWizard.java:156)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY com._1c.g5.v8.dt.platform.services.ui 4 0 2022-05-16 21:22:51.622
+!MESSAGE Произошла внутренняя ошибка
+!STACK 0
+java.lang.reflect.InvocationTargetException
+	at com._1c.g5.v8.dt.internal.platform.services.ui.infobases.wizard.InfobaseWizard.createSection(InfobaseWizard.java:467)
+	at com._1c.g5.v8.dt.internal.platform.services.ui.infobases.wizard.InfobaseWizard.lambda$3(InfobaseWizard.java:156)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: com._1c.g5.v8.dt.platform.services.core.runtimes.execution.RuntimeExecutionException: Ошибка взаимодействия с платформой 1С:Предприятия 8.3.20.1613:
+Журнал процесса платформы [код ошибки 1]:
+Создание информационной базы ("File="C:\Users\klyaksa\Documents\InfoBaseEDT";Locale="ru_RU";DBMS="MSSQLServer";") успешно завершено
+Информационная база с указанным именем или параметрами соединения уже зарегистрирована
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.AbstractRuntimeComponentExecutor.executeRuntimeProcessCommand(AbstractRuntimeComponentExecutor.java:348)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.AbstractRuntimeComponentExecutor.executeRuntimeProcessCommand(AbstractRuntimeComponentExecutor.java:97)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.ThickClientLauncher.createInfobase(ThickClientLauncher.java:90)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.DesignerSessionThickClientLauncher.lambda$1(DesignerSessionThickClientLauncher.java:211)
+	at com._1c.g5.v8.dt.internal.platform.services.core.runtimes.execution.DesignerSessionOperationSupport.execOutOfDesignerSession(DesignerSessionOperationSupport.java:302)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.DesignerSessionThickClientLauncher.execOutOfDesignerSession(DesignerSessionThickClientLauncher.java:863)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.DesignerSessionThickClientLauncher.createInfobase(DesignerSessionThickClientLauncher.java:210)
+	at com._1c.g5.v8.dt.internal.platform.services.ui.infobases.wizard.InfobaseWizard.createSection(InfobaseWizard.java:435)
+	... 2 more
+Root exception:
+com._1c.g5.v8.dt.platform.services.core.runtimes.execution.RuntimeExecutionException: Ошибка взаимодействия с платформой 1С:Предприятия 8.3.20.1613:
+Журнал процесса платформы [код ошибки 1]:
+Создание информационной базы ("File="C:\Users\klyaksa\Documents\InfoBaseEDT";Locale="ru_RU";DBMS="MSSQLServer";") успешно завершено
+Информационная база с указанным именем или параметрами соединения уже зарегистрирована
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.AbstractRuntimeComponentExecutor.executeRuntimeProcessCommand(AbstractRuntimeComponentExecutor.java:348)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.AbstractRuntimeComponentExecutor.executeRuntimeProcessCommand(AbstractRuntimeComponentExecutor.java:97)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.ThickClientLauncher.createInfobase(ThickClientLauncher.java:90)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.DesignerSessionThickClientLauncher.lambda$1(DesignerSessionThickClientLauncher.java:211)
+	at com._1c.g5.v8.dt.internal.platform.services.core.runtimes.execution.DesignerSessionOperationSupport.execOutOfDesignerSession(DesignerSessionOperationSupport.java:302)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.DesignerSessionThickClientLauncher.execOutOfDesignerSession(DesignerSessionThickClientLauncher.java:863)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.DesignerSessionThickClientLauncher.createInfobase(DesignerSessionThickClientLauncher.java:210)
+	at com._1c.g5.v8.dt.internal.platform.services.ui.infobases.wizard.InfobaseWizard.createSection(InfobaseWizard.java:435)
+	at com._1c.g5.v8.dt.internal.platform.services.ui.infobases.wizard.InfobaseWizard.lambda$3(InfobaseWizard.java:156)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY com._1c.g5.v8.dt.platform.services.ui 4 0 2022-05-16 21:22:56.078
+!MESSAGE Произошла внутренняя ошибка
+!STACK 0
+java.lang.reflect.InvocationTargetException
+	at com._1c.g5.v8.dt.internal.platform.services.ui.infobases.wizard.InfobaseWizard.createSection(InfobaseWizard.java:467)
+	at com._1c.g5.v8.dt.internal.platform.services.ui.infobases.wizard.InfobaseWizard.lambda$3(InfobaseWizard.java:156)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: com._1c.g5.v8.dt.platform.services.core.runtimes.execution.RuntimeExecutionException: Ошибка взаимодействия с платформой 1С:Предприятия 8.3.20.1613:
+Журнал процесса платформы [код ошибки 1]:
+Указанная информационная база уже существует.
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.AbstractRuntimeComponentExecutor.executeRuntimeProcessCommand(AbstractRuntimeComponentExecutor.java:348)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.AbstractRuntimeComponentExecutor.executeRuntimeProcessCommand(AbstractRuntimeComponentExecutor.java:97)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.ThickClientLauncher.createInfobase(ThickClientLauncher.java:90)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.DesignerSessionThickClientLauncher.lambda$1(DesignerSessionThickClientLauncher.java:211)
+	at com._1c.g5.v8.dt.internal.platform.services.core.runtimes.execution.DesignerSessionOperationSupport.execOutOfDesignerSession(DesignerSessionOperationSupport.java:302)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.DesignerSessionThickClientLauncher.execOutOfDesignerSession(DesignerSessionThickClientLauncher.java:863)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.DesignerSessionThickClientLauncher.createInfobase(DesignerSessionThickClientLauncher.java:210)
+	at com._1c.g5.v8.dt.internal.platform.services.ui.infobases.wizard.InfobaseWizard.createSection(InfobaseWizard.java:435)
+	... 2 more
+Root exception:
+com._1c.g5.v8.dt.platform.services.core.runtimes.execution.RuntimeExecutionException: Ошибка взаимодействия с платформой 1С:Предприятия 8.3.20.1613:
+Журнал процесса платформы [код ошибки 1]:
+Указанная информационная база уже существует.
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.AbstractRuntimeComponentExecutor.executeRuntimeProcessCommand(AbstractRuntimeComponentExecutor.java:348)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.AbstractRuntimeComponentExecutor.executeRuntimeProcessCommand(AbstractRuntimeComponentExecutor.java:97)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.ThickClientLauncher.createInfobase(ThickClientLauncher.java:90)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.DesignerSessionThickClientLauncher.lambda$1(DesignerSessionThickClientLauncher.java:211)
+	at com._1c.g5.v8.dt.internal.platform.services.core.runtimes.execution.DesignerSessionOperationSupport.execOutOfDesignerSession(DesignerSessionOperationSupport.java:302)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.DesignerSessionThickClientLauncher.execOutOfDesignerSession(DesignerSessionThickClientLauncher.java:863)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.DesignerSessionThickClientLauncher.createInfobase(DesignerSessionThickClientLauncher.java:210)
+	at com._1c.g5.v8.dt.internal.platform.services.ui.infobases.wizard.InfobaseWizard.createSection(InfobaseWizard.java:435)
+	at com._1c.g5.v8.dt.internal.platform.services.ui.infobases.wizard.InfobaseWizard.lambda$3(InfobaseWizard.java:156)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY com._1c.g5.v8.dt.platform.services.ui 4 0 2022-05-16 21:23:00.269
+!MESSAGE Произошла внутренняя ошибка
+!STACK 0
+java.lang.reflect.InvocationTargetException
+	at com._1c.g5.v8.dt.internal.platform.services.ui.infobases.wizard.InfobaseWizard.createSection(InfobaseWizard.java:467)
+	at com._1c.g5.v8.dt.internal.platform.services.ui.infobases.wizard.InfobaseWizard.lambda$3(InfobaseWizard.java:156)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: com._1c.g5.v8.dt.platform.services.core.runtimes.execution.RuntimeExecutionException: Ошибка взаимодействия с платформой 1С:Предприятия 8.3.20.1613:
+Журнал процесса платформы [код ошибки 1]:
+Указанная информационная база уже существует.
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.AbstractRuntimeComponentExecutor.executeRuntimeProcessCommand(AbstractRuntimeComponentExecutor.java:348)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.AbstractRuntimeComponentExecutor.executeRuntimeProcessCommand(AbstractRuntimeComponentExecutor.java:97)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.ThickClientLauncher.createInfobase(ThickClientLauncher.java:90)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.DesignerSessionThickClientLauncher.lambda$1(DesignerSessionThickClientLauncher.java:211)
+	at com._1c.g5.v8.dt.internal.platform.services.core.runtimes.execution.DesignerSessionOperationSupport.execOutOfDesignerSession(DesignerSessionOperationSupport.java:302)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.DesignerSessionThickClientLauncher.execOutOfDesignerSession(DesignerSessionThickClientLauncher.java:863)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.DesignerSessionThickClientLauncher.createInfobase(DesignerSessionThickClientLauncher.java:210)
+	at com._1c.g5.v8.dt.internal.platform.services.ui.infobases.wizard.InfobaseWizard.createSection(InfobaseWizard.java:435)
+	... 2 more
+Root exception:
+com._1c.g5.v8.dt.platform.services.core.runtimes.execution.RuntimeExecutionException: Ошибка взаимодействия с платформой 1С:Предприятия 8.3.20.1613:
+Журнал процесса платформы [код ошибки 1]:
+Указанная информационная база уже существует.
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.AbstractRuntimeComponentExecutor.executeRuntimeProcessCommand(AbstractRuntimeComponentExecutor.java:348)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.AbstractRuntimeComponentExecutor.executeRuntimeProcessCommand(AbstractRuntimeComponentExecutor.java:97)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.ThickClientLauncher.createInfobase(ThickClientLauncher.java:90)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.DesignerSessionThickClientLauncher.lambda$1(DesignerSessionThickClientLauncher.java:211)
+	at com._1c.g5.v8.dt.internal.platform.services.core.runtimes.execution.DesignerSessionOperationSupport.execOutOfDesignerSession(DesignerSessionOperationSupport.java:302)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.DesignerSessionThickClientLauncher.execOutOfDesignerSession(DesignerSessionThickClientLauncher.java:863)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.DesignerSessionThickClientLauncher.createInfobase(DesignerSessionThickClientLauncher.java:210)
+	at com._1c.g5.v8.dt.internal.platform.services.ui.infobases.wizard.InfobaseWizard.createSection(InfobaseWizard.java:435)
+	at com._1c.g5.v8.dt.internal.platform.services.ui.infobases.wizard.InfobaseWizard.lambda$3(InfobaseWizard.java:156)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY com._1c.g5.v8.dt.platform.services.ui 4 0 2022-05-16 21:23:23.352
+!MESSAGE Произошла внутренняя ошибка
+!STACK 0
+java.lang.reflect.InvocationTargetException
+	at com._1c.g5.v8.dt.internal.platform.services.ui.infobases.wizard.InfobaseWizard.createSection(InfobaseWizard.java:467)
+	at com._1c.g5.v8.dt.internal.platform.services.ui.infobases.wizard.InfobaseWizard.lambda$3(InfobaseWizard.java:156)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: com._1c.g5.v8.dt.platform.services.core.runtimes.execution.RuntimeExecutionException: Ошибка взаимодействия с платформой 1С:Предприятия 8.3.20.1613:
+Журнал процесса платформы [код ошибки 1]:
+Создание информационной базы ("File="C:\Users\klyaksa\Documents\InfoBase5";Locale="ru_RU";DBMS="MSSQLServer";") успешно завершено
+Информационная база с указанным именем или параметрами соединения уже зарегистрирована
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.AbstractRuntimeComponentExecutor.executeRuntimeProcessCommand(AbstractRuntimeComponentExecutor.java:348)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.AbstractRuntimeComponentExecutor.executeRuntimeProcessCommand(AbstractRuntimeComponentExecutor.java:97)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.ThickClientLauncher.createInfobase(ThickClientLauncher.java:90)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.DesignerSessionThickClientLauncher.lambda$1(DesignerSessionThickClientLauncher.java:211)
+	at com._1c.g5.v8.dt.internal.platform.services.core.runtimes.execution.DesignerSessionOperationSupport.execOutOfDesignerSession(DesignerSessionOperationSupport.java:302)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.DesignerSessionThickClientLauncher.execOutOfDesignerSession(DesignerSessionThickClientLauncher.java:863)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.DesignerSessionThickClientLauncher.createInfobase(DesignerSessionThickClientLauncher.java:210)
+	at com._1c.g5.v8.dt.internal.platform.services.ui.infobases.wizard.InfobaseWizard.createSection(InfobaseWizard.java:435)
+	... 2 more
+Root exception:
+com._1c.g5.v8.dt.platform.services.core.runtimes.execution.RuntimeExecutionException: Ошибка взаимодействия с платформой 1С:Предприятия 8.3.20.1613:
+Журнал процесса платформы [код ошибки 1]:
+Создание информационной базы ("File="C:\Users\klyaksa\Documents\InfoBase5";Locale="ru_RU";DBMS="MSSQLServer";") успешно завершено
+Информационная база с указанным именем или параметрами соединения уже зарегистрирована
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.AbstractRuntimeComponentExecutor.executeRuntimeProcessCommand(AbstractRuntimeComponentExecutor.java:348)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.AbstractRuntimeComponentExecutor.executeRuntimeProcessCommand(AbstractRuntimeComponentExecutor.java:97)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.ThickClientLauncher.createInfobase(ThickClientLauncher.java:90)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.DesignerSessionThickClientLauncher.lambda$1(DesignerSessionThickClientLauncher.java:211)
+	at com._1c.g5.v8.dt.internal.platform.services.core.runtimes.execution.DesignerSessionOperationSupport.execOutOfDesignerSession(DesignerSessionOperationSupport.java:302)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.DesignerSessionThickClientLauncher.execOutOfDesignerSession(DesignerSessionThickClientLauncher.java:863)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.DesignerSessionThickClientLauncher.createInfobase(DesignerSessionThickClientLauncher.java:210)
+	at com._1c.g5.v8.dt.internal.platform.services.ui.infobases.wizard.InfobaseWizard.createSection(InfobaseWizard.java:435)
+	at com._1c.g5.v8.dt.internal.platform.services.ui.infobases.wizard.InfobaseWizard.lambda$3(InfobaseWizard.java:156)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY com._1c.g5.v8.dt.platform.services.ui 1 0 2022-05-16 21:24:09.820
+!MESSAGE Проект InfoBaseEDT импортируется из информационной базы
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 1 0 2022-05-16 21:24:12.059
+!MESSAGE ConfigDumpInfo.xml is stored for "InfoBaseEDT"
+
+!ENTRY com._1c.g5.v8.dt.core 1 0 2022-05-16 21:24:14.115
+!MESSAGE Project context is being started: InfoBaseEDT
+
+!ENTRY com._1c.g5.v8.dt.core 1 0 2022-05-16 21:24:16.432
+!MESSAGE Project context is started: InfoBaseEDT
+
+!ENTRY org.eclipse.equinox.security 1 0 2022-05-16 21:24:19.211
+!MESSAGE New keyring password generated. 
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 1 0 2022-05-16 21:24:19.373
+!MESSAGE SSH connecton with infobase InfoBaseEDT established.
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 1 0 2022-05-16 21:24:19.374
+!MESSAGE Project "InfoBaseEDT" is connected to infobase "InfoBaseEDT"
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 1 0 2022-05-16 21:24:19.394
+!MESSAGE Synchronization data store is opened: D:\1С\EDT\Practice05\.metadata\.plugins\org.eclipse.core.resources\.projects\InfoBaseEDT\com._1c.g5.v8.dt.platform.services.core\.default\infobase-synchronization\bc7076c5-9b16-4291-9e09-5bc88327e027\SynchronizationData.store
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 1 0 2022-05-16 21:24:19.397
+!MESSAGE Waiting for synchronization completed.
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 1 0 2022-05-16 21:24:19.398
+!MESSAGE Infobase syncrhonization tracking BM model InfoBaseEDT started
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 1 0 2022-05-16 21:29:04.508
+!MESSAGE Updating connections up to associations...
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 1 0 2022-05-16 21:29:07.351
+!MESSAGE ConfigDumpInfo.xml is stored for "InfoBaseEDT"
