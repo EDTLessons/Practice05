@@ -362,3 +362,9 @@ java.nio.file.AccessDeniedException: D:\1С\EDT\Practice05\.metadata\.plugins\or
 
 !ENTRY com._1c.g5.v8.dt.platform.services.core 1 0 2022-05-16 21:55:27.533
 !MESSAGE ConfigDumpInfo.xml is stored for "InfoBaseEDT"
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 1 0 2022-05-16 22:02:53.347
+!MESSAGE Updating connections up to associations...
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 1 0 2022-05-16 22:02:54.281
+!MESSAGE ConfigDumpInfo.xml is stored for "InfoBaseEDT"
