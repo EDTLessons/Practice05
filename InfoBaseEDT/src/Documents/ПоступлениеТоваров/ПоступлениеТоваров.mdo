@@ -24,6 +24,7 @@
   <numberPeriodicity>Year</numberPeriodicity>
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ПоступлениеТоваров.Form.ФормаДокумента</defaultObjectForm>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="6e51564c-5a38-4581-b43b-fe9060ec1b36">
@@ -56,6 +57,15 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <forms uuid="3d5b9c04-c610-4b2e-80d4-dd74f027334d">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <tabularSections uuid="ff6431b8-f4a4-4096-aeb6-84b79d4c6411">
     <producedTypes>
       <objectType typeId="359eeb72-eb6b-490c-a745-ad9e841e1fde" valueTypeId="15e7574b-b80f-4177-a8da-d9f5c15bef8e"/>

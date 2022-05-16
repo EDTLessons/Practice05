@@ -276,3 +276,89 @@ com._1c.g5.v8.dt.platform.services.core.runtimes.execution.RuntimeExecutionExcep
 
 !ENTRY com._1c.g5.v8.dt.platform.services.core 1 0 2022-05-16 21:29:07.351
 !MESSAGE ConfigDumpInfo.xml is stored for "InfoBaseEDT"
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 1 0 2022-05-16 21:52:32.908
+!MESSAGE ConfigDumpInfo.xml is stored for "InfoBaseEDT"
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 1 0 2022-05-16 21:52:32.931
+!MESSAGE Project "InfoBaseEDT" is connected to infobase "InfoBaseEDT"
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 1 0 2022-05-16 21:52:32.948
+!MESSAGE Synchronization data store is opened: D:\1С\EDT\Practice05\.metadata\.plugins\org.eclipse.core.resources\.projects\InfoBaseEDT\com._1c.g5.v8.dt.platform.services.core\refs\heads\dev-issue_01\infobase-synchronization\bc7076c5-9b16-4291-9e09-5bc88327e027\SynchronizationData.store
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 1 0 2022-05-16 21:52:32.949
+!MESSAGE Infobase syncrhonization tracking BM model InfoBaseEDT started
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 4 0 2022-05-16 21:52:32.960
+!MESSAGE Ошибка удаления внутреннего хранилища соединения с информационной базой
+!STACK 0
+java.nio.file.DirectoryNotEmptyException: D:\1С\EDT\Practice05\.metadata\.plugins\org.eclipse.core.resources\.projects\InfoBaseEDT\com._1c.g5.v8.dt.platform.services.core\.default\infobase-synchronization\bc7076c5-9b16-4291-9e09-5bc88327e027\SynchronizationData.store
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:271)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:105)
+	at java.base/java.nio.file.Files.delete(Files.java:1141)
+	at com._1c.g5.v8.dt.common.FileUtil$1.postVisitDirectory(FileUtil.java:86)
+	at com._1c.g5.v8.dt.common.FileUtil$1.postVisitDirectory(FileUtil.java:1)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2742)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2796)
+	at com._1c.g5.v8.dt.common.FileUtil.deleteRecursively(FileUtil.java:205)
+	at com._1c.g5.v8.dt.internal.platform.services.core.infobases.sync.InfobaseSynchronizationManager.deleteSynchronizationState(InfobaseSynchronizationManager.java:1549)
+	at com._1c.g5.v8.dt.internal.platform.services.core.infobases.sync.InfobaseSynchronizationManager.lambda$12(InfobaseSynchronizationManager.java:1237)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfPresent(ConcurrentHashMap.java:1822)
+	at com._1c.g5.v8.dt.internal.platform.services.core.infobases.sync.InfobaseSynchronizationManager.disconnect(InfobaseSynchronizationManager.java:1226)
+	at com._1c.g5.v8.dt.internal.platform.services.core.infobases.sync.InfobaseSynchronizationManager.disconnect(InfobaseSynchronizationManager.java:1217)
+	at com._1c.g5.v8.dt.internal.platform.services.core.infobases.sync.InfobaseSynchronizationManager.infobaseDissociated(InfobaseSynchronizationManager.java:505)
+	at com._1c.g5.v8.dt.internal.platform.services.core.infobases.InfobaseAssociationManager.lambda$5(InfobaseAssociationManager.java:449)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at com._1c.g5.v8.dt.internal.platform.services.core.infobases.InfobaseAssociationManager.fireDisssociationEvent(InfobaseAssociationManager.java:449)
+	at com._1c.g5.v8.dt.internal.platform.services.core.infobases.InfobaseAssociationManager.dissociate(InfobaseAssociationManager.java:325)
+	at com._1c.g5.v8.dt.platform.services.core.infobases.IInfobaseAssociationManager$pbryglu.dissociate(Unknown Source)
+	at com._1c.g5.v8.dt.internal.team.git.infobases.GitRepositoryAssociationContextManager.migrate(GitRepositoryAssociationContextManager.java:118)
+	at com._1c.g5.v8.dt.internal.team.git.infobases.GitRepositoryAssociationContextManager$1.providerMapped(GitRepositoryAssociationContextManager.java:61)
+	at org.eclipse.team.internal.core.RepositoryProviderManager.providerMapped(RepositoryProviderManager.java:37)
+	at org.eclipse.team.core.RepositoryProvider.map(RepositoryProvider.java:174)
+	at org.eclipse.egit.core.op.ConnectProviderOperation.connectProject(ConnectProviderOperation.java:165)
+	at org.eclipse.egit.core.op.ConnectProviderOperation.execute(ConnectProviderOperation.java:111)
+	at org.eclipse.egit.core.internal.job.JobUtil$1.run(JobUtil.java:55)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 4 0 2022-05-16 21:52:32.963
+!MESSAGE Ошибка удаления внутренних проектных настроек по информационным базам
+!STACK 0
+java.nio.file.AccessDeniedException: D:\1С\EDT\Practice05\.metadata\.plugins\org.eclipse.core.resources\.projects\InfoBaseEDT\com._1c.g5.v8.dt.platform.services.core\.default\infobase-synchronization\bc7076c5-9b16-4291-9e09-5bc88327e027\SynchronizationData.store\log
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:89)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:274)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:105)
+	at java.base/java.nio.file.Files.delete(Files.java:1141)
+	at com._1c.g5.v8.dt.common.FileUtil$1.visitFile(FileUtil.java:77)
+	at com._1c.g5.v8.dt.common.FileUtil$1.visitFile(FileUtil.java:1)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2724)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2796)
+	at com._1c.g5.v8.dt.common.FileUtil.deleteRecursively(FileUtil.java:205)
+	at com._1c.g5.v8.dt.internal.platform.services.core.infobases.InfobaseProjectSettingsStore.deleteSynchronizationProperties(InfobaseProjectSettingsStore.java:437)
+	at com._1c.g5.v8.dt.internal.platform.services.core.infobases.sync.InfobaseSynchronizationManager.deleteSynchronizationState(InfobaseSynchronizationManager.java:1561)
+	at com._1c.g5.v8.dt.internal.platform.services.core.infobases.sync.InfobaseSynchronizationManager.lambda$12(InfobaseSynchronizationManager.java:1237)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfPresent(ConcurrentHashMap.java:1822)
+	at com._1c.g5.v8.dt.internal.platform.services.core.infobases.sync.InfobaseSynchronizationManager.disconnect(InfobaseSynchronizationManager.java:1226)
+	at com._1c.g5.v8.dt.internal.platform.services.core.infobases.sync.InfobaseSynchronizationManager.disconnect(InfobaseSynchronizationManager.java:1217)
+	at com._1c.g5.v8.dt.internal.platform.services.core.infobases.sync.InfobaseSynchronizationManager.infobaseDissociated(InfobaseSynchronizationManager.java:505)
+	at com._1c.g5.v8.dt.internal.platform.services.core.infobases.InfobaseAssociationManager.lambda$5(InfobaseAssociationManager.java:449)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at com._1c.g5.v8.dt.internal.platform.services.core.infobases.InfobaseAssociationManager.fireDisssociationEvent(InfobaseAssociationManager.java:449)
+	at com._1c.g5.v8.dt.internal.platform.services.core.infobases.InfobaseAssociationManager.dissociate(InfobaseAssociationManager.java:325)
+	at com._1c.g5.v8.dt.platform.services.core.infobases.IInfobaseAssociationManager$pbryglu.dissociate(Unknown Source)
+	at com._1c.g5.v8.dt.internal.team.git.infobases.GitRepositoryAssociationContextManager.migrate(GitRepositoryAssociationContextManager.java:118)
+	at com._1c.g5.v8.dt.internal.team.git.infobases.GitRepositoryAssociationContextManager$1.providerMapped(GitRepositoryAssociationContextManager.java:61)
+	at org.eclipse.team.internal.core.RepositoryProviderManager.providerMapped(RepositoryProviderManager.java:37)
+	at org.eclipse.team.core.RepositoryProvider.map(RepositoryProvider.java:174)
+	at org.eclipse.egit.core.op.ConnectProviderOperation.connectProject(ConnectProviderOperation.java:165)
+	at org.eclipse.egit.core.op.ConnectProviderOperation.execute(ConnectProviderOperation.java:111)
+	at org.eclipse.egit.core.internal.job.JobUtil$1.run(JobUtil.java:55)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 1 0 2022-05-16 21:55:26.141
+!MESSAGE Updating connections up to associations...
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 1 0 2022-05-16 21:55:27.533
+!MESSAGE ConfigDumpInfo.xml is stored for "InfoBaseEDT"
